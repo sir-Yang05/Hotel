@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" spacing="20" stylesheets="@../style.css"
+      xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="dashboard.DashboardController">
+    <Label text="User Dashboard" style="-fx-font-size:20px;"/>
+    <HBox spacing="15">
+        <Button fx:id="orderSearchBtn" text="Search Order" onAction="#handleOrderSearch"/>
+        <Button fx:id="chatBotBtn" text="Chat Bot" onAction="#handleChatBot"/>
+    </HBox>
+    <Button fx:id="backBtn" text="Logout" onAction="#handleBack"/>
+</VBox>

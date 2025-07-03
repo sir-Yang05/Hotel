@@ -1,0 +1,10 @@
+.root {
+    -fx-padding: 20;
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-background-color: linear-gradient(to bottom, #ece9e6, #ffffff);
+}
+Button {
+    -fx-background-radius: 5;
+    -fx-padding: 8 15;
+    -fx-border-color: #ccc;
+}

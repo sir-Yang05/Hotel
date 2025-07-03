@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" spacing="15" stylesheets="@../style.css"
+      xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="dashboard.AdminDashboardController">
+    <Label text="Admin Dashboard" style="-fx-font-size:20px;"/>
+    <HBox spacing="10">
+        <Button fx:id="manageRoomsBtn" text="Manage Rooms" onAction="#handleManageRooms"/>
+        <Button fx:id="manageUsersBtn" text="Manage Users" onAction="#handleManageUsers"/>
+    </HBox>
+    <HBox spacing="10">
+        <Button fx:id="orderSearchBtn" text="Search Order" onAction="#handleOrderSearch"/>
+        <Button fx:id="chatBotBtn" text="Chat Bot" onAction="#handleChatBot"/>
+    </HBox>
+    <Button fx:id="backBtn" text="Logout" onAction="#handleBack"/>
+</VBox>
